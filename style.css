@@ -1,0 +1,124 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+
+img {
+    height: 100vh;
+    width: 100%;
+    position: absolute;
+    top: 0;
+    z-index: -1;
+    background-repeat: no-repeat;
+    opacity: 0.9;
+}
+
+.container {
+    padding: 1rem;
+}
+
+.container h1 {
+    text-align: center;
+}
+
+.container form {
+    margin-top: 1rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.container form input {
+    background-color: white;
+    border: 2px solid #808080;
+    width: 400px;
+    padding: 10px;
+    margin: 5px;
+    font-weight: 600;
+    font-size: 14px;
+    border-radius: 0.3rem;
+}
+
+.gender_sel {
+    background-color: white;
+    border: 2px solid #808080;
+    width: 400px;
+    padding: 10px;
+    margin: 5px;
+    font-weight: 600;
+    font-size: 14px;
+    border-radius: 0.3rem;
+}
+
+select {
+    background-color: white;
+    border: 2px solid #808080;
+    width: 200px;
+    padding: 10px;
+    margin: 5px;
+    font-weight: 600;
+    font-size: 14px;
+    border-radius: 0.3rem;
+}
+
+@media screen and (max-width: 450px) {
+
+    .container form input {
+        width: 300px;
+        background-color: white;
+        opacity: 0.9;
+    }
+
+    .gender_sel {
+        width: 300px;
+        background-color: white;
+        opacity: 0.9;
+    }
+
+    img {
+        opacity: 0.9;
+    }
+
+    body {
+        background-image: url("./image.png");
+    }
+
+}
+
+.green {
+    color: green;
+    text-align: center;
+    font-weight: 600;
+    border: 2px solid green;
+    padding: 5px;
+    border-radius: 0.3rem;
+    width: 200px;
+    margin: auto;
+}
+
+@media screen and (max-width: 400px) {
+
+    .container form input {
+        background-color: white;
+        opacity: 0.9;
+        width: 100%;
+    }
+
+    .gender_sel {
+        width: 230px;
+        background-color: white;
+        opacity: 0.9;
+    }
+
+    img {
+        opacity: 0.9;
+    }
+
+    body {
+        background-image: url("./image.png");
+    }
+
+}
